@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urgent and Notice</title>
+    <link rel="stylesheet" href="/post-notice/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headcontainer">
+            <div class="head">
+                <a href="../index.html" class="back anchortag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left arrow-icon icon"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                    <button class="backbtn btn">Back</button>
+                </a>
+                <div class="mainheading">
+                    <h1 class="mainheadingh1">🚨 Urgent Notices</h1>
+                    <p class="mainheadingpara">Emergency and high-priority community alerts</p>
+                </div>
+            </div>
+                <a href="../index.html" class="home anchortag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house house-icon icon"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    <button class="homebtn btn">Home</button>
+                </a>
+        </div>
+        
+        <div class="bodycontainer">
+            <div class="create-notice-container">
+                <div class="create-notice ">
+                    <h3 class="create-notice-heading">Post Urgent Notice</h3>
+                </div>
+                <div class="input-notice">
+                    <div class="title-div">
+                        <label for="title" class="labels">Title*</label><br>
+                        <input type="text" class="inp title-inp" id="title" placeholder="Enter post title">
+                    </div>
+                    <div class="content-div">
+                        <label for="content" class="labels">Content*</label><br>
+                        <input type="text" class="content- inp inp" id="content" placeholder="Write your content here...">
+                    </div>
+                    
+                    <div class="name-div">
+                        <label for="name" class="labels">Your Name*</label><br>
+                        <input type="text" class="name-inp inp" id="name">
+                    </div>
+                    
+                    <div class="category-div">
+                        <label for="category" class="labels">Category</label><br>
+
+                        <select name="category" id="category">
+                            <option value="Security">Security</option>
+                            <option value="Maintenance">Maintenance</option>
+                            <option value="Weather Alert">Weather Alert</option>
+                            <option value="Emergency">Emergency</option>
+                            <option value="Health & Safety">Health & Safety</option>
+                        </select>
+
+                        <div class="urgent-box">
+                            <input type="checkbox" name="urgent" class="checkbox-input" id="urgent">
+                            <label for="urgent" >Mark as urgent</label>
+                        </div>
+
+
+                    
+                    </div>
+                    <div class="create-post-btn-div">
+                        <button class="create-post-btn submit-btn">Create Post</button>
+                    </div>
+                    
+
+                </div>
+            </div>
+            <div class="recent-notice-container">
+                    <h2 class="recent-notice-heading">Urgent Notices</h2>
+                    <div class="notices">
+                        <div class="notice-card latest-notice urgent-card">
+                            <div class="notice-title">
+                                <div>
+                                    <h3 class="notice-heading">Water Main Repair - Service Interruption</h3>
+                                    <div class="notice-author author-name name-date">
+                                        <span>By Aditya Pratap Singh</span>
+                                        <span>•</span>
+                                        <span>2025-07-01</span>
+                                    </div>
+                                </div>
+                                <div class="tag">
+                                    <div class="category-name-div">
+                                        found pet
+                                    </div>
+                                    <div class="urgent-mark category-name-div" >urgent</div>
+                                </div>
+                                
+                            </div>
+                            <div class="notice-body">
+                                <p>URGENT: Water service will be interrupted tomorrow (Jan 16) from 8 AM to 2 PM for emergency main line repairs on Maple Street. Please store water in advance. Updates will be posted here.</p>
+                            </div>
+                        </div>
+
+                        <div class="notice-card old-notice urgent-card">
+                            <div class="notice-title ">
+                                <div class="notice-heading-div">
+                                    <h3 class="notice-heading">Security Alert - Suspicious Activity</h3>
+                                    <div class="notice-author author-name name-date">
+                                        <span>By Aditya Pratap Singh</span>
+                                        <span>•</span>
+                                        <span>2025-07-01</span>
+                                    </div>
+                                </div>
+                                <div class="tag">
+                                    <div class="category-name-div">Lost Item</div>
+                                    <div class="urgent-mark category-name-div" >urgent</div>
+                                </div>
+
+
+                            </div>
+                            <div class="notice-body">
+                                <p>Alert: There have been reports of suspicious activity near the parking garage late at night. Please be extra cautious and report any unusual behavior to security immediately at ext. 911.</p>
+                            </div>
+                        </div>
+                    </div>       
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
