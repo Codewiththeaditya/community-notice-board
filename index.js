@@ -1,16 +1,18 @@
 const express = require("express");
 const app = express();
-const port = 8080;
-const path = require("path");
+const port = process.env.PORT || 8080;
+const path =  require("path");
 const mongoose = require("mongoose");
 const User = require("./models/loginData.js");
+require("dotenv").config();
+
 
 
 
 
 async function main(){
     try{
-        await mongoose.connect("mongodb://127.0.0.1:27017/loginDetails");
+        await mongoose.connect(process.env.MONGO_URL);
         console.log("Connected");
     }
     catch(err){
