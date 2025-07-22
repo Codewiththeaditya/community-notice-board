@@ -54,7 +54,7 @@ app.use(express.urlencoded({extended:true}));
 
 
 //fill id pass using pass and send using get and post
-app.get("/login",(req,res)=>{
+app.get("/",(req,res)=>{
     res.render("login-page.ejs");
 })
 
