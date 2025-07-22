@@ -60,7 +60,7 @@ app.get("/",(req,res)=>{
 
 //Parse data and check the entry is correct or not :
 
-app.post("/login",async (req,res)=>{
+app.post("/",async (req,res)=>{
     let {email, password} = req.body;
 
     try{
